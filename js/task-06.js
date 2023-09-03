@@ -5,7 +5,7 @@ const validationNumber = Number(inputEl.dataset.length);
 const validateInput = (event) => {
   inputEl.classList.remove("invalid");
 
-  if (event.currentTarget.value.length !== validationNumber) {
+  if (event.currentTarget.value.trim().length !== validationNumber) {
     inputEl.classList.add("invalid");
     return;
   }
